@@ -1,16 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "logos",
+  "collectionName": "images",
   "info": {
-    "singularName": "logo",
-    "pluralName": "logos",
-    "displayName": "Logo"
+    "singularName": "image",
+    "pluralName": "images",
+    "displayName": "Image",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "logoImage": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
       "allowedTypes": [
         "images",
         "files",

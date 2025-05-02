@@ -3,24 +3,24 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 12px;
-  margin: 40px auto;
-  height: 60px;
-  max-width: 1060px;
+  border-radius: 0.75rem;
+  margin: 2rem auto;
+  height: clamp(3rem, 6vw, 3.75rem);
+  max-width: 90%;
   overflow: hidden;
   padding: 0;
 }
 
 .links {
   display: flex;
-  gap: 30px;
-  padding-left: 30px;
+  gap: clamp(1rem, 2vw, 1.875rem);
+  padding-left: clamp(1rem, 2vw, 1.875rem);
 }
 
 .links a {
   color: #000000;
   text-decoration: none;
-  font-size: 15px;
+  font-size: clamp(0.75rem, 1.5vw, 0.9375rem);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -38,49 +38,48 @@
   justify-content: center;
   font-family: 'Anton', sans-serif;
   font-style: italic;
-  transform: translateX(-10px);
+  transform: translateX(-0.625rem);
   line-height: 1;
 }
 
 .limitless {
-  font-size: 12px;
+  font-size: clamp(0.6rem, 1.2vw, 0.75rem);
   color: #306fc7;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .hydrate {
-  font-size: 24px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: #306fc7;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
-.text{
+.text {
   display: flex;
-  
   align-items: center;
   justify-content: center;
 }
+
 .buyNowContainer {
   background-color: #000000;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 clamp(1rem, 2vw, 1.875rem);
 }
 
 .buyNow {
   color: #ffffff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: clamp(0.75rem, 1.5vw, 0.9375rem);
   font-weight: bold;
 }
 
 .buyNow:hover {
   color: #306fc7;
 }
-
 
 .navbar,
 .navbar * {

@@ -369,12 +369,13 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiLogoLogo extends Struct.CollectionTypeSchema {
-  collectionName: 'logos';
+export interface ApiImageImage extends Struct.CollectionTypeSchema {
+  collectionName: 'images';
   info: {
-    displayName: 'Logo';
-    pluralName: 'logos';
-    singularName: 'logo';
+    description: '';
+    displayName: 'Image';
+    pluralName: 'images';
+    singularName: 'image';
   };
   options: {
     draftAndPublish: true;
@@ -383,10 +384,11 @@ export interface ApiLogoLogo extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::logo.logo'> &
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::image.image'> &
       Schema.Attribute.Private;
-    logoImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -936,7 +938,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::logo.logo': ApiLogoLogo;
+      'api::image.image': ApiImageImage;
       'api::product.product': ApiProductProduct;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

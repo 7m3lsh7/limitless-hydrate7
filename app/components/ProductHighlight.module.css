@@ -1,7 +1,7 @@
 .productHighlight {
-  max-width: 1300px;
-  margin: 40px auto;
-  border-radius: 12px;
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 0.75rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 
 .highlightRow {
   display: flex;
-  height: 500px;
+  height: clamp(25rem, 50vw, 31.25rem);
   width: 100%;
 }
 
@@ -21,9 +21,10 @@
   justify-content: center;
   font-family: 'Anton', sans-serif;
   font-style: italic;
-  transform: translateX(-10px);
+  transform: translateX(-0.625rem);
   line-height: 1;
 }
+
 .logo2 {
   display: flex;
   flex-direction: column;
@@ -31,61 +32,60 @@
   justify-content: center;
   line-height: 1;
 }
+
 .limitless {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: #ffffff;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .hydrate {
-  font-size: 88px;
+  font-size: clamp(3rem, 6vw, 5.5rem);
   color: #ffffff;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 .STAY_HYDRATED {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: #ffffff;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .FEEL_ELEVATED {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: #ffffff;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
-
 .highlightRow:nth-child(2) {
-  height: 600px;
+  height: clamp(30rem, 60vw, 37.5rem);
 }
 
 .highlightCard {
   flex: 1 1 50%;
-  padding: 60px;
+  padding: clamp(2rem, 4vw, 3.75rem);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   margin: 0;
 }
 
 .topLeft {
-  border-top-left-radius: 12px;
+  border-top-left-radius: 0.75rem;
 }
 
 .topRight {
-  border-top-right-radius: 12px;
+  border-top-right-radius: 0.75rem;
 }
 
 .bottomLeft {
-  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 0.75rem;
 }
 
 .bottomRight {
-  border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 0.75rem;
 }
 
 .yellowBg {
@@ -111,18 +111,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  display: block; 
+  display: block;
 }
 
 .highlightCard h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 55px;
+  font-size: clamp(2rem, 4vw, 3.4375rem);
   font-weight: 900;
   color: #ffffff;
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: -4px;
+  letter-spacing: -0.25rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -133,24 +133,24 @@
 }
 
 .highlightCard h2 span:first-child {
-  margin-bottom: -20px;
+  margin-bottom: clamp(-1.25rem, -2vw, -0.9375rem);
 }
 
 .highlightCard p {
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
   font-weight: 400;
   color: #ffffff;
-  margin: 0 0 40px 0;
+  margin: 0 0 2.5rem 0;
   line-height: 1.3;
   max-width: 90%;
-  text-align: center; 
+  text-align: center;
 }
 
 .features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.25rem;
 }
 
 .featureItem {
@@ -160,21 +160,47 @@
 }
 
 .featureItem img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  display: block; 
+  width: clamp(2.5rem, 5vw, 3.125rem);
+  height: clamp(2.5rem, 5vw, 3.125rem);
+  margin-bottom: 0.625rem;
+  display: block;
 }
 
 .featureItem span {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
 }
 
+.features1 {
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.featureItem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureItem1 img {
+  width: clamp(2rem, 4vw, 2.5rem);
+  height: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+.featureItem1 span {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.625rem, 1.2vw, 0.75rem);
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
 @media (max-width: 900px) {
   .highlightRow {
     flex-direction: column;
@@ -185,110 +211,39 @@
   }
   .highlightCard {
     flex: 1 1 100%;
-    height: 500px;
-    padding: 40px;
+    height: clamp(20rem, 40vw, 31.25rem);
+    padding: clamp(1.5rem, 3vw, 2.5rem);
   }
   .bottomLeft {
-    height: 600px;
+    height: clamp(25rem, 50vw, 37.5rem);
   }
   .bottomRight {
-    height: 500px;
+    height: clamp(20rem, 40vw, 31.25rem);
   }
   .imageBg {
     flex: 1 1 100%;
-    height: 500px;
+    height: clamp(20rem, 40vw, 31.25rem);
   }
   .bottomLeft .imageBg {
-    height: 600px;
+    height: clamp(25rem, 50vw, 37.5rem);
   }
-  .highlightCard h2 {
-    font-size: 45px;
-    letter-spacing: -3px;
-  }
-  .highlightCard h2 span:first-child {
-    margin-bottom: -15px;
-  }
-  .highlightCard p {
-    font-size: 16px;
-    line-height: 1.2;
-    max-width: 100%;
-  }
-  .features {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .featureItem img {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 8px;
-  }
-  .featureItem span {
-    font-size: 13px;
-  }
-}
-.features1 { 
-  display: flex;
-  gap: 15px;
 }
 
-.featureItem1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.featureItem1 img {
-  width: 40px; 
-  height: 40px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.featureItem1 span {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px; 
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-}
 @media (max-width: 600px) {
   .highlightCard {
-    padding: 30px;
-    height: 450px;
+    padding: clamp(1rem, 2vw, 1.875rem);
+    height: clamp(18rem, 35vw, 28.125rem);
   }
   .bottomLeft {
-    height: 550px;
+    height: clamp(22rem, 45vw, 34.375rem);
   }
   .bottomRight {
-    height: 450px;
+    height: clamp(18rem, 35vw, 28.125rem);
   }
   .imageBg {
-    height: 450px;
+    height: clamp(18rem, 35vw, 28.125rem);
   }
   .bottomLeft .imageBg {
-    height: 550px;
-  }
-  .highlightCard h2 {
-    font-size: 35px;
-    letter-spacing: -2px;
-  }
-  .highlightCard h2 span:first-child {
-    margin-bottom: -10px;
-  }
-  .highlightCard p {
-    font-size: 14px;
-    line-height: 1.2;
-  }
-  .features {
-    gap: 10px;
-  }
-  .featureItem img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 6px;
-  }
-  .featureItem span {
-    font-size: 12px;
+    height: clamp(22rem, 45vw, 34.375rem);
   }
 }

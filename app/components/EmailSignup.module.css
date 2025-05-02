@@ -1,27 +1,27 @@
 .emailSignup {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
-  }
-  
-  .emailSignup input {
-    flex: 1;
-    padding: 10px 5px;
-    border: none;
-    outline: none;
-    color: #000;
-    font-size: 14px;
-    background: none;
-    font-weight: normal;
-  }
-  
-  .emailSignup button {
-    background: none;
-    border: none;
-    font-weight: bold;
-    font-size: 14px;
-    color: #000;
-    cursor: pointer;
-  }
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.125rem solid #000;
+  padding-bottom: 0.25rem;
+}
+
+.emailSignup input {
+  flex: 1;
+  padding: 0.625rem 0.3125rem;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  background: none;
+  font-weight: normal;
+}
+
+.emailSignup button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #000;
+  cursor: pointer;
+}

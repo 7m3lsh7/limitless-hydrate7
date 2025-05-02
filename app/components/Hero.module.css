@@ -1,10 +1,10 @@
 .heroSection {
-  max-width: 1300px;
+  max-width: 90%;
   width: 100%;
-  margin: 40px auto;
+  margin: 2rem auto;
   background-color: #306fc7;
-  border-radius: 12px;
-  height: 800px;
+  border-radius: 0.75rem;
+  height: clamp(40vh, 50vw, 50rem);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -20,28 +20,28 @@
   position: absolute;
   z-index: 2;
   padding: 0;
-  max-width: 400px;
-  left: 80px;
-  bottom: 60px;
+  max-width: clamp(20rem, 40vw, 25rem);
+  left: clamp(2rem, 5vw, 5rem);
+  bottom: clamp(2rem, 5vw, 3.75rem);
 }
 
 .heroContent h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
+  font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: bold;
   color: #ffffff;
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
   line-height: 1;
 }
 
 .heroContent p {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
   font-weight: normal;
   color: #ffffff;
-  margin: 0 0 30px 0;
+  margin: 0 0 1.875rem 0;
   line-height: 1.5;
-  max-width: 350px;
+  max-width: 90%;
 }
 
 .heroContent button {
@@ -49,9 +49,9 @@
   background-color: #ffffff;
   color: #000000;
   border: none;
-  border-radius: 30px;
-  padding: 12px 40px;
-  font-size: 16px;
+  border-radius: 1.875rem;
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -61,49 +61,25 @@
   background-color: #306fc7;
   color: #ffffff;
 }
-
 @media (max-width: 900px) {
   .heroSection {
-    height: 600px;
+    height: clamp(30vh, 40vw, 37.5rem);
     background-position: center;
   }
   .heroContent {
     position: static;
     max-width: 100%;
     text-align: center;
-    padding: 20px;
-  }
-  .heroContent h1 {
-    font-size: 36px;
-  }
-  .heroContent p {
-    font-size: 14px;
-    max-width: 100%;
-  }
-  .heroContent button {
-    font-size: 14px;
-    padding: 10px 35px;
-    border-radius: 30px;
+    padding: 1.25rem;
   }
 }
 
 @media (max-width: 600px) {
   .heroSection {
-    height: 500px;
+    height: clamp(25vh, 35vw, 31.25rem);
     background-position: center;
   }
   .heroContent {
-    padding: 15px;
-  }
-  .heroContent h1 {
-    font-size: 28px;
-  }
-  .heroContent p {
-    font-size: 12px;
-  }
-  .heroContent button {
-    font-size: 12px;
-    padding: 8px 30px;
-    border-radius: 30px;
+    padding: 0.9375rem;
   }
 }
