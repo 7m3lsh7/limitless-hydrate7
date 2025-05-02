@@ -1,0 +1,294 @@
+.productHighlight {
+  max-width: 1300px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.highlightRow {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  transform: translateX(-10px);
+  line-height: 1;
+}
+.logo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.limitless {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.hydrate {
+  font-size: 88px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.STAY_HYDRATED {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.FEEL_ELEVATED {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+
+.highlightRow:nth-child(2) {
+  height: 600px;
+}
+
+.highlightCard {
+  flex: 1 1 50%;
+  padding: 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.topLeft {
+  border-top-left-radius: 12px;
+}
+
+.topRight {
+  border-top-right-radius: 12px;
+}
+
+.bottomLeft {
+  border-bottom-left-radius: 12px;
+}
+
+.bottomRight {
+  border-bottom-right-radius: 12px;
+}
+
+.yellowBg {
+  background-color: #ffd700;
+}
+
+.blueBg {
+  background-color: #306fc7;
+}
+
+.imageBg {
+  flex: 1 1 50%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block; 
+}
+
+.highlightCard h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.highlightCard h2 span {
+  display: block;
+}
+
+.highlightCard h2 span:first-child {
+  margin-bottom: -20px;
+}
+
+.highlightCard p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+  max-width: 90%;
+  text-align: center; 
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureItem img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: block; 
+}
+
+.featureItem span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .highlightRow {
+    flex-direction: column;
+    height: auto;
+  }
+  .highlightRow:nth-child(2) {
+    height: auto;
+  }
+  .highlightCard {
+    flex: 1 1 100%;
+    height: 500px;
+    padding: 40px;
+  }
+  .bottomLeft {
+    height: 600px;
+  }
+  .bottomRight {
+    height: 500px;
+  }
+  .imageBg {
+    flex: 1 1 100%;
+    height: 500px;
+  }
+  .bottomLeft .imageBg {
+    height: 600px;
+  }
+  .highlightCard h2 {
+    font-size: 45px;
+    letter-spacing: -3px;
+  }
+  .highlightCard h2 span:first-child {
+    margin-bottom: -15px;
+  }
+  .highlightCard p {
+    font-size: 16px;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .featureItem img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 8px;
+  }
+  .featureItem span {
+    font-size: 13px;
+  }
+}
+.features1 { 
+  display: flex;
+  gap: 15px;
+}
+
+.featureItem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureItem1 img {
+  width: 40px; 
+  height: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.featureItem1 span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px; 
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .highlightCard {
+    padding: 30px;
+    height: 450px;
+  }
+  .bottomLeft {
+    height: 550px;
+  }
+  .bottomRight {
+    height: 450px;
+  }
+  .imageBg {
+    height: 450px;
+  }
+  .bottomLeft .imageBg {
+    height: 550px;
+  }
+  .highlightCard h2 {
+    font-size: 35px;
+    letter-spacing: -2px;
+  }
+  .highlightCard h2 span:first-child {
+    margin-bottom: -10px;
+  }
+  .highlightCard p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .features {
+    gap: 10px;
+  }
+  .featureItem img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+  }
+  .featureItem span {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,146 @@
+.footer {
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; 
+  gap: 20px;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.footerSection {
+  flex: 1 1 0; 
+  min-width: 150px; 
+  max-width: 250px; 
+}
+
+.footerSection:first-child {
+  max-width: 300px; 
+}
+
+.footerSection h3 {
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+}
+
+.footerSection p {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.footerSection h4 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.footerSection p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footerSection p a:hover {
+  color: #306fc7;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  line-height: 1;
+}
+
+.limitless {
+  font-size: 12px;
+  color: #306fc7;
+  letter-spacing: 1px;
+}
+
+.hydrate {
+  font-size: 24px;
+  color: #306fc7;
+  letter-spacing: 2px;
+}
+
+.socialIcons {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.socialIcons img {
+  height: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.socialIcons a:hover img {
+  filter: grayscale(0%);
+}
+
+.divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #777;
+}
+
+.footerBottom a {
+  color: #777;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.footerBottom a:hover {
+  color: #306fc7;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 20px;
+  }
+  .footerContent {
+    flex-wrap: wrap; 
+    gap: 15px;
+  }
+  .footerSection {
+    flex: 1 1 40%;
+    min-width: 150px;
+  }
+  .footerSection:first-child {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerSection {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  .footerSection:first-child {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
