@@ -28,7 +28,7 @@ export default function ProductHighlight() {
           console.error(`No image found for name: ${name}`);
           return '';
         }
-        const imageData = data.data[0]?.image; // تعديل الـ path هنا
+        const imageData = data.data[0]?.image; 
         console.log(`Image Data for ${name}:`, imageData);
         if (!imageData) {
           console.error(`No image data found for name: ${name}`);

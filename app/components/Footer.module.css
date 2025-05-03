@@ -21,7 +21,7 @@
 
 .footerSection {
   flex: 1;
-  min-width: clamp(150px, 20vw, 250px);
+  /* min-width: clamp(150px, 20vw, 250px); */
   max-width: 20%;
 }
 
